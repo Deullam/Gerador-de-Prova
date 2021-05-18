@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2E78E44-1A6A-4B29-9FD3-A6A9740DA2D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NDD.GeradorProva.Application</RootNamespace>
+    <AssemblyName>NDD.GeradorProva.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DisciplinaServico.cs" />
+    <Compile Include="QuestaoServico.cs" />
+    <Compile Include="TesteServico.cs" />
+    <Compile Include="SerieServico.cs" />
+    <Compile Include="MateriaServico.cs" />
+    <Compile Include="Servico.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NDD.GeradorProva.Domain\NDD.GeradorProva.Domain.csproj">
+      <Project>{68704129-7347-4CB0-9E56-055B9683AAF4}</Project>
+      <Name>NDD.GeradorProva.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDD.GeradorProva.Infra.Data\NDD.GeradorProva.Infra.Data.csproj">
+      <Project>{D52FB95D-B7A3-474E-BB17-08E0A51BC692}</Project>
+      <Name>NDD.GeradorProva.Infra.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDD.GeradorProva.Infra.Uit\NDD.GeradorProva.Infra.Util.csproj">
+      <Project>{EE2BAB89-1A27-4B41-AD09-948AA3E1E30F}</Project>
+      <Name>NDD.GeradorProva.Infra.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDD.GeradorProva.Infra\NDD.GeradorProva.Infra.csproj">
+      <Project>{F50B33C2-3B0D-4AAF-BAE6-604F40C00FAF}</Project>
+      <Name>NDD.GeradorProva.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54271C5D-FDF5-4F9A-9472-4D328D1261AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NDD.GeradorProva.WinApp</RootNamespace>
+    <AssemblyName>NDD.GeradorProva.WinApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Funcionalidades\DisciplinaModule\DisciplinaFiltroControleUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\DisciplinaModule\DisciplinaFiltroControleUsuario.Designer.cs">
+      <DependentUpon>DisciplinaFiltroControleUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\MateriaModule\MateriaFiltroControleUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\MateriaModule\MateriaFiltroControleUsuario.Designer.cs">
+      <DependentUpon>MateriaFiltroControleUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\QuestaoModule\QuestaoFiltroControleUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\QuestaoModule\QuestaoFiltroControleUsuario.Designer.cs">
+      <DependentUpon>QuestaoFiltroControleUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\SerieModule\SerieFiltroControleUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\SerieModule\SerieFiltroControleUsuario.Designer.cs">
+      <DependentUpon>SerieFiltroControleUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\TesteModule\TesteFiltroControleUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\TesteModule\TesteFiltroControleUsuario.Designer.cs">
+      <DependentUpon>TesteFiltroControleUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nucleo\ControleUsuario\FiltroBasicoUsuarioControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Nucleo\ControleUsuario\FiltroBasicoUsuarioControle.Designer.cs">
+      <DependentUpon>FiltroBasicoUsuarioControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nucleo\ControleUsuario\ListaBasicaControleUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Nucleo\ControleUsuario\ListaBasicaControleUsuario.Designer.cs">
+      <DependentUpon>ListaBasicaControleUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\DisciplinaModule\DisciplinaCadastroDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\DisciplinaModule\DisciplinaCadastroDialog.Designer.cs">
+      <DependentUpon>DisciplinaCadastroDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\DisciplinaModule\DisciplinaGerenciadorFormulario.cs" />
+    <Compile Include="Funcionalidades\QuestaoModule\AlternativaUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\QuestaoModule\AlternativaUserControl.Designer.cs">
+      <DependentUpon>AlternativaUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\QuestaoModule\QuestaoCadastroDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\QuestaoModule\QuestaoCadastroDialog.Designer.cs">
+      <DependentUpon>QuestaoCadastroDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\QuestaoModule\QuestaoGerenciadorFormulario.cs" />
+    <Compile Include="Funcionalidades\SerieModule\SerieCadastroDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\SerieModule\SerieCadastroDialog.Designer.cs">
+      <DependentUpon>SerieCadastroDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\SerieModule\SerieGerenciadorFormulario.cs" />
+    <Compile Include="Funcionalidades\MateriaModule\MateriaCadastroDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\MateriaModule\MateriaCadastroDialog.Designer.cs">
+      <DependentUpon>MateriaCadastroDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\MateriaModule\MateriaGerenciadorFormulario.cs" />
+    <Compile Include="Funcionalidades\TesteModule\TesteCadastroDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\TesteModule\TesteCadastroDialog.Designer.cs">
+      <DependentUpon>TesteCadastroDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\TesteModule\TesteGerenciadorFormulario.cs" />
+    <Compile Include="Nucleo\CadastroDialog\CadastroBasicoDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nucleo\CadastroDialog\CadastroBasicoDialog.Designer.cs">
+      <DependentUpon>CadastroBasicoDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nucleo\GerenciadorFormulario.cs" />
+    <Compile Include="Nucleo\TituloBotao.cs" />
+    <Compile Include="Nucleo\VisibilidadeBotao.cs" />
+    <Compile Include="Nucleo\EstadoBotao.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\ValidacaoComponenteMetodoExtensao.cs" />
+    <EmbeddedResource Include="Funcionalidades\DisciplinaModule\DisciplinaFiltroControleUsuario.resx">
+      <DependentUpon>DisciplinaFiltroControleUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\MateriaModule\MateriaFiltroControleUsuario.resx">
+      <DependentUpon>MateriaFiltroControleUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\QuestaoModule\QuestaoFiltroControleUsuario.resx">
+      <DependentUpon>QuestaoFiltroControleUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\SerieModule\SerieFiltroControleUsuario.resx">
+      <DependentUpon>SerieFiltroControleUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\TesteModule\TesteFiltroControleUsuario.resx">
+      <DependentUpon>TesteFiltroControleUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nucleo\ControleUsuario\FiltroBasicoUsuarioControle.resx">
+      <DependentUpon>FiltroBasicoUsuarioControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nucleo\ControleUsuario\ListaBasicaControleUsuario.resx">
+      <DependentUpon>ListaBasicaControleUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\DisciplinaModule\DisciplinaCadastroDialog.resx">
+      <DependentUpon>DisciplinaCadastroDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\QuestaoModule\AlternativaUserControl.resx">
+      <DependentUpon>AlternativaUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\QuestaoModule\QuestaoCadastroDialog.resx">
+      <DependentUpon>QuestaoCadastroDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\SerieModule\SerieCadastroDialog.resx">
+      <DependentUpon>SerieCadastroDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\MateriaModule\MateriaCadastroDialog.resx">
+      <DependentUpon>MateriaCadastroDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\TesteModule\TesteCadastroDialog.resx">
+      <DependentUpon>TesteCadastroDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nucleo\CadastroDialog\CadastroBasicoDialog.resx">
+      <DependentUpon>CadastroBasicoDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NDD.GeradorProva.Application\NDD.GeradorProva.Application.csproj">
+      <Project>{E2E78E44-1A6A-4B29-9FD3-A6A9740DA2D7}</Project>
+      <Name>NDD.GeradorProva.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDD.GeradorProva.Domain\NDD.GeradorProva.Domain.csproj">
+      <Project>{68704129-7347-4CB0-9E56-055B9683AAF4}</Project>
+      <Name>NDD.GeradorProva.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDD.GeradorProva.Infra.Data\NDD.GeradorProva.Infra.Data.csproj">
+      <Project>{D52FB95D-B7A3-474E-BB17-08E0A51BC692}</Project>
+      <Name>NDD.GeradorProva.Infra.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDD.GeradorProva.Infra\NDD.GeradorProva.Infra.csproj">
+      <Project>{F50B33C2-3B0D-4AAF-BAE6-604F40C00FAF}</Project>
+      <Name>NDD.GeradorProva.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
